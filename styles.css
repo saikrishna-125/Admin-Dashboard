@@ -1,14 +1,14 @@
 body {
   margin: 0;
 
-  font-family: "Caveat", cursive;
+  font-family: "Varela Round", sans-serif;
 }
 
 .container {
   display: grid;
   height: 100vh;
   grid-template-columns: max(15%, 220px) 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: max-content 5fr;
 }
 
 .sidebar {
@@ -59,8 +59,6 @@ body {
 }
 
 .logo .company-name {
-  font-family: "Nunito", sans-serif;
-
   font-size: 1.5em;
   font-weight: bold;
   color: white;
@@ -69,6 +67,8 @@ body {
 .header {
   grid-row: 1;
   grid-column: 2;
+
+  padding: 10px 10px 10px 20px;
 }
 
 .content {
@@ -93,7 +93,7 @@ body {
 
 .nav-item {
   display: grid;
-  align-items: end;
+  align-items: center;
 
   grid-template-columns: min-content 1fr;
 
@@ -104,7 +104,7 @@ body {
 }
 
 .nav-item div {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .nav svg {
@@ -150,6 +150,8 @@ body {
   justify-content: flex-end;
 
   gap: 30px;
+
+  margin-right: 20px;
 }
 
 .profile-icon {
@@ -166,4 +168,62 @@ body {
 .user-name {
   flex: 0 0 max-content;
   font-size: 1.5em;
+}
+
+.bottom-header {
+  margin: 20px;
+
+  margin-top: 30px;
+
+  display: grid;
+
+  grid-auto-flow: column;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.bottom-header .profile-icon {
+  width: 60px;
+  height: 60px;
+
+  border-radius: 30px;
+}
+
+.bottom-header .profile {
+  display: grid;
+
+  grid-template-columns: max-content max-content;
+  gap: 30px;
+
+  align-items: center;
+}
+
+.greetings div {
+  font-weight: bold;
+}
+
+.greetings div:first-child {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.greetings .user {
+  font-size: 1.5rem;
+}
+
+.actions {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  margin-right: 20px;
+}
+
+.actions div {
+  background-color: #1992d4;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+
+  font-weight: bold;
 }
