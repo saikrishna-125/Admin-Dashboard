@@ -1,7 +1,7 @@
 body {
   margin: 0;
 
-  font-family: sans-serif;
+  font-family: "Caveat", cursive;
 }
 
 .container {
@@ -59,6 +59,8 @@ body {
 }
 
 .logo .company-name {
+  font-family: "Nunito", sans-serif;
+
   font-size: 1.5em;
   font-weight: bold;
   color: white;
@@ -102,10 +104,66 @@ body {
 }
 
 .nav-item div {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
-svg {
+.nav svg {
   width: 1.25em;
   fill: white;
+}
+
+.top-header {
+  display: grid;
+
+  grid-template-columns: 1fr max-content;
+
+  margin: 10px 20px 10px;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  gap: 20px;
+}
+
+.header svg {
+  width: 1em;
+  fill: black;
+
+  flex: 0 0 auto;
+}
+
+.search-bar {
+  width: 80%;
+  height: 25px;
+
+  flex: 0 1 auto;
+
+  border-radius: 15px;
+  background-color: #e2e8f0;
+}
+
+.profile-menu {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 30px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+
+  flex: 0 0 auto;
+
+  border-radius: 20px;
+
+  background: center / contain no-repeat url(images/profile.jpg);
+}
+
+.user-name {
+  flex: 0 0 max-content;
+  font-size: 1.5em;
 }
